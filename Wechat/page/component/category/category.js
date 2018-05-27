@@ -18,7 +18,7 @@ Page({
   onReady() {
     var self = this;
     wx.request({
-      url: 'http://192.168.31.222:8080/category/get_all', success(res) {
+      url: 'http://192.168.31.232:8080/category/get_all', success(res) {
         console.log(res.data)
         self.setData({
           detail: res.data

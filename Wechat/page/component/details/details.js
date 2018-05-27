@@ -33,7 +33,7 @@ Page({
   click: function (e) {//点击‘添加到购物车按钮’：网络请求向数据库中存入购物车信息  
     var model = this.data.goodName;
     wx.request({
-      url: "http://192.168.31.222:8080/cart/add?goodId="+this.data.goodId+"&goodName="+this.data.goodName+"&goodPrice="+this.data.goodPrice+"&goodMainUrl="+this.data.goodMainUrl+"&goodDetailUrls="+this.data.goodDetailUrls,
+      url: "http://192.168.31.232:8080/cart/add?goodId="+this.data.goodId+"&goodName="+this.data.goodName+"&goodPrice="+this.data.goodPrice+"&goodMainUrl="+this.data.goodMainUrl+"&goodDetailUrls="+this.data.goodDetailUrls,
     });   
 
     wx.showToast({

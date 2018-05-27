@@ -18,7 +18,7 @@ Page({
     // 页面渲染完成
     var self = this;
     wx.request({
-      url: 'http://192.168.31.222:8080/good/get_all',
+      url: 'http://192.168.31.232:8080/good/get_all',
       success(res) {
         self.setData({
           all_goods: res.data,

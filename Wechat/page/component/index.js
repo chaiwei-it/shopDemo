@@ -22,7 +22,7 @@ Page({
     })
     var self = this;
     wx.request({
-      url: 'http://192.168.31.222:8080/good/get_all_odd',
+      url: 'http://192.168.31.232:8080/good/get_all_odd',
       success(res) {
         self.setData({
           odd_goods: res.data,
@@ -31,7 +31,7 @@ Page({
       }
     });
     wx.request({
-      url: 'http://192.168.31.222:8080/good/get_all_even',
+      url: 'http://192.168.31.232:8080/good/get_all_even',
       success(res) {
         self.setData({
           even_goods: res.data,
@@ -39,7 +39,7 @@ Page({
       },
     });
     wx.request({
-      url: 'http://192.168.31.222:8080/good/get_title',
+      url: 'http://192.168.31.232:8080/good/get_title',
       success(res) {
         self.setData({
           title_goods: res.data,

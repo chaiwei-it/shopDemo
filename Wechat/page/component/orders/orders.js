@@ -13,7 +13,7 @@ Page({
     var self=this;
     setTimeout(function () {//用延迟执行的方式避免因为事务冲突得到刚刚删除空的数据库而得不到数据
       wx.request({
-        url: 'http://192.168.31.222:8080/order/get_all',
+        url: 'http://192.168.31.232:8080/order/get_all',
         success(res) {          
           console.log(self.data.ma)
           console.log(res.data)
